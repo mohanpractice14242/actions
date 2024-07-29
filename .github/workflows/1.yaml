@@ -14,9 +14,10 @@ jobs:
         run: |
           echo "Listing all files in the repository:"
           ls -R
-      - name: cloiint the github repository
-        env:
-          token: ${{ secrets.test_github }}
-        run: | 
-          https://github.com/mohantest14242/python-testing.git
 
+      - name: Clone another GitHub repository
+        env:
+          GH_PAT: ${{ secrets.test_github }}
+        run: |
+          echo "Cloning another GitHub repository"
+          git clone https://username:${GH_PAT}@github.com/mohantest14242/python-testing.git
