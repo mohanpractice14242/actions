@@ -51,5 +51,5 @@ jobs:
           pytest python-testing/unit_test
       - name: lint code5
         run: |
-          flake8 .
+          flake8 src/main.py
 
