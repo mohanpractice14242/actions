@@ -21,3 +21,6 @@ jobs:
         run: |
           echo "Cloning another GitHub repository"
           git clone https://username:${GH_PAT}@github.com/mohantest14242/python-testing.git
+      - name: listing the all the cloned files 
+        run: 
+          ls
