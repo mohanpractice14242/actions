@@ -1,0 +1,15 @@
+name: list all files and directories 
+
+on: 
+  push: 
+    branches:
+        - master 
+jobs: 
+  list-files: 
+    runs-on: 
+    steps: 
+      - name: checkout the directotru 
+        uses: actions/checkout@v3 
+      - name: list all files in directoyur 
+        run: | 
+          ls 
