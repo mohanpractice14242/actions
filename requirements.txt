@@ -1,2 +1,4 @@
+# Example requirements.txt
 fastapi
 uvicorn
+pytest
