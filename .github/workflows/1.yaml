@@ -42,4 +42,7 @@ jobs:
       - name: list the all the files in the main repo 
         run: 
           ls -R
+      - name: run the test cases 
+        run: 
+          pytest python-testing/tests
 
