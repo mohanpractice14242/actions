@@ -14,3 +14,9 @@ jobs:
         run: |
           echo "Listing all files in the repository:"
           ls -R
+      - name: cloiint the github repository
+        env:
+          token: ${{ secrets.test_github }}
+        run: | 
+          https://github.com/mohantest14242/python-testing.git
+
