@@ -48,5 +48,5 @@ jobs:
           pytest python-testing/tests
       - name: run the unit testcases 
         run: 
-          pytest python-testing/unit-test
+          pytest python-testing/unit_test
 
