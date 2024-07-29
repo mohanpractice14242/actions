@@ -1,15 +1,16 @@
-name: list all files and directories 
+name: List Files in Repository
 
-on: 
-  push: 
-    branches:
-        - main
-jobs: 
-  list-files: 
-    runs-on: 
-    steps: 
-      - name: checkout the directotru 
-        uses: actions/checkout@v3 
-      - name: list all files in directoyur 
-        run: | 
-          ls 
+on: [push]
+
+jobs:
+  list-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: List all files
+        run: |
+          echo "Listing all files in the repository:"
+          ls -R
