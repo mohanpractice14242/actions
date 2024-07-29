@@ -49,4 +49,7 @@ jobs:
       - name: run the unit testcases 
         run: 
           pytest python-testing/unit_test
+      - name: lint code 
+        run: | 
+          flake8 .
 
