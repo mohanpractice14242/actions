@@ -52,4 +52,11 @@ jobs:
       - name: lint code5
         run: |
           flake8 src/main.py
+      - name: docker login1
+        uses: docker/login-action@v3
+        with:
+          username: ${{secrets.docker_usename}}
+          password: ${{secrets.docker_password}} 
+        
+
 
