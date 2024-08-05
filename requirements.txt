@@ -4,3 +4,4 @@ uvicorn
 pytest
 flake8
 pylint
+httpx
