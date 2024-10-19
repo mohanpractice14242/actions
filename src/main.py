@@ -16,4 +16,4 @@ def get_name():
     Returns:
         str: A string containing the name of the application.
     """
-    return "this is my name the mohan who are you yo fucker1"
+    return "this is my name the mohan who are i am the king "
